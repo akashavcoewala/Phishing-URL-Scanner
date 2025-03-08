@@ -12,6 +12,12 @@ The **Phishing URL Scanner** is a cybersecurity tool designed to detect and clas
 - 📊 **Logging & Reporting**: Stores scan results for review.
 - 🔄 **Command-Line & GUI Support**: Available as a script and a user-friendly interface.
 
+🔹 Detects phishing URLs, integrates with Google Safe Browsing API, supports bulk scanning, generates reports.")
+🔹 Installation Steps (pip install -r requirements.txt, .env setup)
+🔹 Usage (python phishing_scanner.py)
+🔹 Example Output (e.g., a sample scanned URL result)
+
+
 ## 🏗️ Tech Stack
 
 - **Programming Language**: Python
@@ -69,7 +75,7 @@ A detailed project document is available: **[Project\_Documentation.md](Project_
 
 ## 📜 License
 
-MIT License. Free to use and modify.
+MIT License. Free to use .
 
 ---
 
