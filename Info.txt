@@ -1,0 +1,69 @@
+# Phishing URL Scanner - Project Documentation
+
+## 1. Introduction
+Phishing attacks are a significant threat in cybersecurity, tricking users into revealing sensitive information. This project aims to build a **Phishing URL Scanner** that detects suspicious URLs using various techniques.
+
+## 2. Project Overview
+- **Project Name:** Phishing URL Scanner
+- **Technology Used:** Python, Machine Learning (optional), APIs, Regular Expressions, CSV Handling
+- **Goal:** To detect and classify URLs as phishing or legitimate
+- **Output:** A report indicating whether a given URL is phishing or safe
+
+## 3. Working of the Project
+### Step 1: Data Input
+- The program takes a list of URLs from a file or user input.
+
+### Step 2: Feature Extraction
+- It checks for common phishing characteristics:
+  - Presence of suspicious keywords (e.g., "login", "verify", "update")
+  - Use of IP addresses instead of domain names
+  - Long or obfuscated URLs
+  - Special characters in URL (like @, -, etc.)
+
+### Step 3: External API Validation
+- It uses **VirusTotal API** or **Google Safe Browsing API** to check URL reputation.
+
+### Step 4: Result Generation
+- If a URL is found malicious, it is flagged as phishing.
+- Results are stored in `scan_results.csv`.
+
+## 4. Key Components in the Code
+### **phishing_scanner.py**
+- Reads URLs from `urls.txt`
+- Extracts features
+- Uses an API to check URL reputation
+- Saves results to `scan_results.csv`
+
+### **scan_results.csv**
+- Stores the classification results.
+
+### **urls.txt**
+- Contains the list of URLs to be scanned.
+
+## 5. Deployment
+- Clone the repository from GitHub
+- Install dependencies using `pip install -r requirements.txt`
+- Run `python phishing_scanner.py`
+- Upload additional URLs in `urls.txt` for scanning
+
+## 6. Common Interview Questions
+### **Coding Questions:**
+1. How does your script extract suspicious patterns from a URL?
+2. How do you handle API rate limits in VirusTotal?
+3. How do you store and retrieve scan results?
+4. How can you improve the accuracy of phishing detection?
+
+### **Theory Questions:**
+1. What are phishing attacks and how do they work?
+2. What techniques can be used to detect phishing URLs?
+3. How does VirusTotal or Google Safe Browsing API work?
+4. What are the challenges in phishing detection?
+
+## 7. Future Enhancements
+- Implement machine learning-based classification
+- Develop a web-based interface for scanning
+- Improve accuracy using advanced heuristics
+
+## 8. Conclusion
+This Phishing URL Scanner helps users identify malicious URLs efficiently using predefined patterns and external APIs. It provides a robust foundation for further enhancements in cybersecurity detection tools.
+
