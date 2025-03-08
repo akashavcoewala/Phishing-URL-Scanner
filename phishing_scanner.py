@@ -7,20 +7,16 @@ import json
 import threading
 import re
 from datetime import datetime
+from dotenv import load_dotenv
 
-# ---- API CONFIGURATION ----
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "AIzaSyDIEQKkiyBGRjPZrCQOziOmzLY6W07QRDM")
+# ---- Load environment variables ----
+load_dotenv()
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+VIRUSTOTAL_API_KEY = os.getenv("VIRUSTOTAL_API_KEY")
+
 GOOGLE_API_URL = f"https://safebrowsing.googleapis.com/v4/threatMatches:find?key={GOOGLE_API_KEY}"
-
-USE_VIRUSTOTAL = True  # Enable VirusTotal scanning if needed
-VIRUSTOTAL_API_KEY = os.getenv("VIRUSTOTAL_API_KEY", "b1d06f9ea163bc906f9efc243c541dc2050ce50679c9a1d4a72868eb217cac85")
 VIRUSTOTAL_API_URL = "https://www.virustotal.com/api/v3/urls"
-
-VIRUSTOTAL_HEADERS = {
-    "x-apikey": VIRUSTOTAL_API_KEY,
-    "Content-Type": "application/json"
-}
-
+VIRUSTOTAL_HEADERS = {"x-apikey": VIRUSTOTAL_API_KEY, "Content-Type": "application/json"}
 LOG_FILE = "scan_results.csv"
 
 def is_valid_url(url):
