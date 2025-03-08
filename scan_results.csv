@@ -1,0 +1,12 @@
+Time,URL,Status
+2025-03-08 13:51:21,https://google.com,Safe
+2025-03-08 13:51:21,http://malicious-site.com,Safe
+2025-03-08 13:51:22,https://github.com,Safe
+2025-03-08 13:51:22,https://secure-youraccount.com,Safe
+2025-03-08 13:51:22,http://badsite.com/fake-login,Safe
+2025-03-08 13:51:23,http://malicious-phishing-example.com,Safe
+2025-03-08 13:51:23,http://free-gifts.scam/fraud,Safe
+2025-03-08 13:51:23,http://testsafebrowsing.appspot.com/s/malware.html,Phishing Detected
+2025-03-08 13:51:24,http://bank-verification.secure-login.com,Safe
+2025-03-08 13:51:24,http://paypal-security-update-login.com,Safe
+2025-03-08 13:51:48,https://mail.google.com/mail/u/0/#inbox,Safe

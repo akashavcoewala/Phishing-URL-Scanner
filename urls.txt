@@ -1,0 +1,10 @@
+https://google.com
+http://malicious-site.com
+https://github.com
+https://secure-youraccount.com
+http://badsite.com/fake-login
+http://malicious-phishing-example.com
+http://free-gifts.scam/fraud
+http://testsafebrowsing.appspot.com/s/malware.html
+http://bank-verification.secure-login.com
+http://paypal-security-update-login.com
